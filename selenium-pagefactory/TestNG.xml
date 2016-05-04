@@ -1,0 +1,7 @@
+<suite name="VOA">
+    <test name="VOA Automation">
+        <classes>            
+              <class name="com._8x8.voi.automation.pom.tests.LoginTest"/>             
+        </classes>
+    </test>
+</suite>
