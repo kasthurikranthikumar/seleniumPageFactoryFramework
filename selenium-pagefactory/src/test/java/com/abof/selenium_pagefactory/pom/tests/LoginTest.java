@@ -1,14 +1,15 @@
 package com.abof.selenium_pagefactory.pom.tests;
 
-import org.testng.annotations.Test;
-
 import java.io.FileInputStream;
 import java.util.Properties;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
 import com.abof.selenium_pagefactory.pom.driver.BaseClass;
+import com.abof.selenium_pagefactory.pom.pages.HeaderPage;
 import com.abof.selenium_pagefactory.pom.pages.LoginPage;
 
 public class LoginTest extends BaseClass {
@@ -33,11 +34,13 @@ public class LoginTest extends BaseClass {
 
 	@Test
 	public void On_LoginPage_8X8Logo_Should_Present() throws Exception {
-		LoginPage loginP = new LoginPage(driver);
-		//loginP.getCompanyLogoCount();
-		//Assert.assertTrue(loginP.getCompanyLogoCount() >= 1, "Multiple / No Logo Found");
-	}
+		HeaderPage hPageObj = new HeaderPage(driver);
+		hPageObj.navigateToSignInPage();
+		LoginPage lPageObj = new LoginPage(driver);
+		lPageObj.login(testData.getProperty("ValidUname"), testData.getProperty("ValidPassword"));
 
-	
+		Assert.assertTrue(hPageObj.getMeLoggedInPersonFirstName().equalsIgnoreCase(testData.getProperty("firstName")),
+				"Login Failed");
+	}
 
 }

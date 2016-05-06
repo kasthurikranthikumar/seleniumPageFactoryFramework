@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="103448" started-at="2016-05-06T09:36:03Z" finished-at="2016-05-06T09:37:46Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="103448" started-at="2016-05-06T09:36:03Z" finished-at="2016-05-06T09:37:46Z">
+      <class name="com.abof.selenium_pagefactory.pom.tests.LoginTest">
+        <test-method status="PASS" signature="startWebdriverSession()[pri:0, instance:com.abof.selenium_pagefactory.pom.tests.LoginTest@215be6bb]" name="startWebdriverSession" is-config="true" duration-ms="56824" started-at="2016-05-06T15:06:03Z" finished-at="2016-05-06T15:07:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebdriverSession -->
+        <test-method status="PASS" signature="On_LoginPage_8X8Logo_Should_Present()[pri:0, instance:com.abof.selenium_pagefactory.pom.tests.LoginTest@215be6bb]" name="On_LoginPage_8X8Logo_Should_Present" duration-ms="45376" started-at="2016-05-06T15:07:00Z" finished-at="2016-05-06T15:07:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- On_LoginPage_8X8Logo_Should_Present -->
+        <test-method status="PASS" signature="stopWebdriverSession()[pri:0, instance:com.abof.selenium_pagefactory.pom.tests.LoginTest@215be6bb]" name="stopWebdriverSession" is-config="true" duration-ms="1231" started-at="2016-05-06T15:07:45Z" finished-at="2016-05-06T15:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopWebdriverSession -->
+      </class> <!-- com.abof.selenium_pagefactory.pom.tests.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
