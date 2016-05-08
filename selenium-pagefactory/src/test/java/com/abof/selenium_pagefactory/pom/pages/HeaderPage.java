@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import com.abof.selenium_pagefactory.pom.utils.PageLevelUtils;
+import com.abof.selenium_pagefactory.pom.utils.WebElementWait;
 
 public class HeaderPage {
 	WebDriver driver;
@@ -42,7 +42,7 @@ public class HeaderPage {
 	}
 
 	public String getMeLoggedInPersonFirstName() {
-		PageLevelUtils.elementIsDisplayedFluentlyPredicate(linkSignOut, 5, 500);
+		WebElementWait.elementIsDisplayedFluentlyPredicate(linkSignOut, 5, 500);
 		return linkSignOut.getText();
 	}
 

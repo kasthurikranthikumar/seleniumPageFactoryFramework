@@ -21,7 +21,7 @@ public class PageLevelUtils {
 	 * wait.until(ExpectedConditions.presenceOfElementLocated(by)); }
 	 */
 
-	public static void elementIsDisplayedFluentlyPredicate(WebElement element, long timeOutInSeconds,
+	/*public static void elementIsDisplayedFluentlyPredicate(WebElement element, long timeOutInSeconds,
 			long sleepTimeOut) {
 		new FluentWait<WebElement>(element).withTimeout(10, TimeUnit.SECONDS).pollingEvery(100, TimeUnit.MILLISECONDS)
 				.ignoring(NoSuchElementException.class).until(new Function<WebElement, Boolean>() {
@@ -30,6 +30,6 @@ public class PageLevelUtils {
 					}
 				});
 
-	}
+	}*/
 
 }

@@ -7,7 +7,7 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.abof.selenium_pagefactory.pom.utils.PageLevelUtils;
+import com.abof.selenium_pagefactory.pom.utils.WebElementWait;
 
 public class LoginPage {
 
@@ -68,7 +68,7 @@ public class LoginPage {
 	}
 
 	public void login(String uname, String pwd) {
-		PageLevelUtils.elementIsDisplayedFluentlyPredicate(txtEmail_Existing, 10, 500);
+		WebElementWait.elementIsDisplayedFluentlyPredicate(txtEmail_Existing, 10, 500);
 		radioExistingUser.click();
 		txtEmail_Existing.sendKeys(uname);
 		txtPassword_Existing.sendKeys(pwd);
@@ -76,9 +76,9 @@ public class LoginPage {
 	}
 
 	public void registerNewAccount() {
-		PageLevelUtils.elementIsDisplayedFluentlyPredicate(txtEmail_New, 10, 500);
+		WebElementWait.elementIsDisplayedFluentlyPredicate(txtEmail_New, 10, 500);
 		radioNewUser.click();
-		//enter details here
+		// enter details here
 	}
 
 }

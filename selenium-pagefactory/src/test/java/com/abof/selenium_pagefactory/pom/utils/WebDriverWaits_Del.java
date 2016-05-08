@@ -16,8 +16,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class WebDriverWaits extends FluentWait<WebElement> {
-	public WebDriverWaits(WebElement input) {
+public class WebDriverWaits_Del extends FluentWait<WebElement> {
+	public WebDriverWaits_Del(WebElement input) {
 		super(input);
 		// TODO Auto-generated constructor stub
 	}
