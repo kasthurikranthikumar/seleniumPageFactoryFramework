@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.FluentWait;
 
 import com.google.common.base.Function;
 
-public class PageLevelUtils {
+public class ZPageLevelUtils_Del {
 	/*
 	 * public void visibilityOf(WebDriver driver, WebElement element, long
 	 * duration, long pollingTime) { WebDriverWait wait=new

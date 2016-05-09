@@ -1,7 +1,11 @@
 package com.abof.selenium_pagefactory.pom.utils;
 
+import java.util.Random;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 
 public class CommonFunctions {
 	static char specialCharacters[] = { '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '?', '/', '"', '|', '{', '[',
@@ -42,6 +46,56 @@ public class CommonFunctions {
 
 		return message;
 	}
+
+	public static int generateRandomNumberBetweenNumbers(int min, int max) {
+		Random random = new Random();
+		return random.nextInt(max - min) + min;
+	}
+
+	public String generateAlphaNumericRandomString(int length) {
+		// RandomStringUtils.random(length, (('A'..'Z') +
+		// ('0'..'9')).join().toCharArray());
+		return "";
+	}
+
+	public void scrollToCenter() {
+
+		/*
+		 * int center = driver.manage().window().getSize().getHeight()/2 int
+		 * locatorHeight = element.firstElement().getLocation().getY() - center
+		 * js.exec("window.scrollTo(0,$locatorHeight);")
+		 */
+
+	}
+
+	/**
+	 * to scroll the page to top based on the element.
+	 * 
+	 * @param block
+	 */
+	public void scrollToTop() {
+
+		/*
+		 * int center = driver.manage().window().getSize().getHeight()/4 int
+		 * locatorHeight = element.firstElement().getLocation().getY() + center
+		 * js.exec("window.scrollTo(0,$locatorHeight);")
+		 */
+
+	}
+	
+	
+	public void zoomOutBrowser(boolean reset, WebDriver driver ) {
+        Actions action = new Actions(driver);
+        if(reset) {
+            action.sendKeys(Keys.chord(Keys.CONTROL,"0")).build().perform();
+        } else {
+            action.sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT))
+                    .sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT))
+                    .sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT))
+                    .sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT))
+                    .sendKeys(Keys.chord(Keys.CONTROL, Keys.SUBTRACT)).build().perform();
+        }
+    }
 
 	/*
 	 * public static void downloadFile(String href, String fileName) throws
