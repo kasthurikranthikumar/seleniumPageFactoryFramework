@@ -24,8 +24,6 @@ import org.apache.poi.ss.util.CellRangeAddress;
 
 public class ExcellUtility {
 
-	 
-
 	public void readme() throws IOException {
 		FileInputStream file = new FileInputStream(
 				new File("D:\\Selenium\\JavaWorld\\WorkSpace\\EXCELLWORLD\\JobServe_Suit.xls"));

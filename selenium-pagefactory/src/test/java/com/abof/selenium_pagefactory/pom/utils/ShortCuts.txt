@@ -3,3 +3,19 @@ Ecliplse shortcuts
 Format Text : Ctrl+ Shift + F
 
 Organise Imports : ctrl + shift + O
+
+
+open file/resource  : ctrol + shift + R
+
+
+Hop back and forth through the files you have visited: Alt + ← and Alt + →, respectively
+
+
+Go to line number N in the source file: Ctrl + L, enter line number.
+
+
+
+Go to the last edit location: Ctrl + Q for 
+
+
+Go to a supertype/subtype: Ctrl + T. 
